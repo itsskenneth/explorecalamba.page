@@ -1,0 +1,51 @@
+body {
+  background-image: url(bg1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
+}
+img {
+    border : 5px solid rgb(44, 35, 52)
+}
+h1{
+  color: white;
+  font-size: 35px;
+}
+small{
+  color: white;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.navbar a:hover:before {
+  width: 100%;
+}
